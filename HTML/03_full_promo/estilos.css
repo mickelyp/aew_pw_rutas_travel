@@ -1,0 +1,333 @@
+body {
+  background-color: #001F28; /* Fondo de color azul */
+  margin: 0; /* Elimina el margen por defecto */
+  font-family: Arial, sans-serif; /* Fuente para el texto */
+  height: 100vh; /* Para asegurarse de que cubra toda la pantalla */
+  position: relative;
+  overflow: hidden; /* Para ocultar cualquier parte de la imagen fuera de la vista */
+  font-family: anto;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;    
+}
+@font-face {
+  font-family: "Antonio-VariableFont_wght";
+  src: url(fuente/Caoutchouc/Antonio-VariableFont_wght.ttf) format("trueType");
+}
+
+@font-face {
+  font-family: "caoutchouc";
+  src: url(fuente/Caoutchouc/Caoutchouc\ Regular.ttf) format("trueType");
+}
+
+.titulo {
+  color: #FF9500;
+  font-size: 80px;
+  font-family: "caoutchouc";
+  text-align: center;
+  padding: 90px;
+}
+.señal{
+  display: flex;
+  margin-top: 5%;
+  position: absolute;
+  height: auto;
+}
+.señal img {
+width: 40%;
+opacity: 0.1;
+}
+
+.contenedor {
+  display: flex;
+  position: relative;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  gap: 20px; /* Espacio entre los elementos */
+  width: 90%;
+  margin: auto;
+  min-height: 100%
+}
+
+#izquierda {
+  flex: 1; /* Ambos toman el mismo espacio */
+  display: flex;
+  flex-direction: column; /* Acomoda los elementos en columna */
+  text-align: right;
+  align-items: flex-end;
+  margin-top: 3%;
+  margin-right: 15%;
+  position: relative;
+}
+#derecha {
+  flex: 1; /* Ambos toman el mismo espacio */
+  display: flex;
+  flex-direction: column; /* Acomoda los elementos en columna */
+  align-items: flex-start;
+  margin-top: 3%;
+  position: relative;
+}
+
+#separador {
+  width: 5px;
+  background-color: #FF9500;
+  border-radius: 30px;
+  height: 100%; /* Ahora debería ocupar todo el alto del contenedor */
+  position: absolute;
+  flex-direction: column;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%); /* Para centrar los círculos */
+}
+#separador .circle:nth-child(1) {
+  top: 10%; /* Primer círculo */
+}
+
+#separador .circle:nth-child(2) {
+  top: 30%; /* Segundo círculo */
+}
+
+#separador .circle:nth-child(3) {
+  top: 50%; /* Tercer círculo */
+}
+
+#separador .circle:nth-child(4) {
+  top: 70%; /* Cuarto círculo */
+}
+
+#separador .circle:nth-child(5) {
+  top: 90%; /* Quinto círculo */
+}
+
+
+.imgiz {
+  margin-bottom: 200px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(45deg); /* Rota el contenedor para crear el rombo */
+  border-radius: 30px;
+}
+
+.marco {
+  right: 5%;
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  position: absolute;
+  border: 3px solid #FF9500;
+  border-radius: 30px;
+  transform: rotate(45deg);
+  z-index: -1; /* Asegura que el marco esté por encima de la imagen */
+}
+
+.imgiz img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  transform: rotate(-45deg) scale(1.42); /* Contrarresta la rotación y ajusta la imagen */
+}
+
+.imgder {
+  margin-bottom: 150px; 
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(45deg); /* Rota el contenedor para crear el rombo */
+  border-radius: 30px;
+}
+
+.icono {
+  width: 28px;  /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  vertical-align: middle;  /* Alinea verticalmente con el texto */
+  margin-right: 6px;
+}
+
+#maletin {
+  position: absolute;
+  top: 25%; /* Ajusta para que esté alineado con la imagen de Lunahuaná */
+  right: 0px; /* Ajusta la distancia del borde derecho */
+}
+#maletin img {
+  width: 150px;
+opacity: 0.1;
+}
+
+#barco {
+  position: absolute;
+  top: 43%; /* Ajusta para que esté alineado con la imagen de Lunahuaná */
+  left: 0px; /* Ajusta la distancia del borde derecho */
+}
+#barco img {
+  width: 200px;
+opacity: 0.1;
+}
+
+.textoiz, .textoder {
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-bottom: 200px; /* Ajusta el margen inferior */
+  display: flex; /* Convierte el contenedor en un flexbox */
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+.tachado {
+  position: relative;
+  margin-right: 80px;
+}
+
+.tachado::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: 43px;
+  height: 1.5px; /* Grosor de la línea */
+  background-color:#FF9500;
+  border-radius: 50px;
+  transform: rotate(-20deg); /* Ajusta el ángulo de la línea */
+  transform-origin: center;
+}
+
+.final {
+  font-size: 32px;
+}
+
+
+.imgder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg) scale(1.42); /* Contrarresta la rotación y ajusta la imagen */
+}
+
+
+.subtitulo {
+  text-align: center;
+  font-size: 28px;
+  font-family: "caoutchouc";
+  color: #FF9500;
+}
+p {
+  color: white;
+  font-family: "Antonio-VariableFont_wght";
+  font-size: 18px;
+}
+
+.reserva {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #FF9500;
+  color: white;
+  font-family: "Antonio-VariableFont_wght";
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid #FF9500;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 10px; /* Espacio entre el texto y el botón */
+}
+
+.reserva:hover {
+  background-color: transparent;
+  color: #FF9500;
+  border: 2px solid #FF9500;
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+  font-family: "caoutchouc";
+  text-align: center;
+  margin-top: auto;  /* Empuja el footer al fondo */
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-seccion {
+  width: 30%;
+  min-width: 250px;
+}
+
+.footer-seccion h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "caoutchouc";
+}
+
+.footer-seccion p, .footer-seccion a {
+  color: white;
+  text-decoration: none;
+  font-family: "caoutchouc";
+  font-size: 14px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-seccion a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-seccion a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.footer-seccion p img{
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+.footer-logo{
+  width: 200px;  /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.social-iconos{
+  display: flex;
+  justify-content: center;
+  gap: 30px; /*Espacio entre iconos*/
+  margin-top: 10px;
+}
+.social-iconos a img{
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+.social-iconos a:hover img{
+  transform: scale(1.2);
+}
