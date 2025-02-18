@@ -4,7 +4,6 @@ body {
 }
 
 .header {
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,4 +11,40 @@ body {
     padding: 5px 5%;
 }
 
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .menu-horizontal {
+    list-style: none;
+}
+
+.header .menu-horizontal li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .menu-horizontal a {
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .menu-horizontal li:hover{
+    transform: scale(1.1);
+}
+
+.header .menu-horizontal li a:hover {
+    color: yellow;
+}
 
