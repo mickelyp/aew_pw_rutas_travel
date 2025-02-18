@@ -1,0 +1,15 @@
+body {
+    background-image: url(../image/fondo-1.jpg);
+    background-size: cover;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+}
+
+
