@@ -125,85 +125,127 @@ nav ul li.logo img:hover{
     height: 40px;
 }
 
+.about-section h3 {
+  font-family: 'Caoutchouc';
+  font-size: 3 rem;
+  color: #FF9500;
+  background-color: #001F28;
+  width: 200px;
+}
+
+.about-section h2 {
+  font-family: 'Antonio';
+  font-size: 3 rem;
+  color: white;
+  background-color: #001F28;
+  width: 200px;
+}
+
+.about-section p {
+  font-family: 'Antonio';
+  font-size: 15px;
+  color: white;
+  background-color: #001F28;
+  height: auto;
+  width: auto;
+}
+
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    color: white;
-    font-family: "caoutchouc";
-    text-align: center;
-    margin-top: auto;  /* Empuja el footer al fondo */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+  background-color: #001F28; /* Fondo de color azul */
+  font-family: "caoutchouc";
+  text-align: center;
+  margin-top: auto;  /* Empuja el footer al fondo */
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  height: 140px;
+  margin: auto;
+}
+
+.footer-seccion {
+  width: 30%;
+  min-width: 250px;
+}
   
-  .footer-contenedor {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: auto;
-  }
+.footer-seccion h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "caoutchouc";
+}
   
-  .footer-seccion {
-    width: 30%;
-    min-width: 250px;
-  }
-  
-  .footer-seccion h3 {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-family: "caoutchouc";
-  }
-  
-  .footer-seccion p, .footer-seccion a {
-    color: white;
-    text-decoration: none;
-    font-family: "caoutchouc";
-    font-size: 14px;
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .footer-seccion a img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-  }
-  
-  .footer-seccion a:hover img {
-    transform: scale(1.2);
-  }
-  
-  .footer-copy {
-    align-self: flex-end;
-    margin-top: 10px;
-    text-decoration: none;
-  }
-  .footer-seccion p img{
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-  }
-  .footer-logo{
-    width: 200px;  /* Ajusta el tamaño del logo */
-    height: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .social-iconos{
-    display: flex;
-    justify-content: center;
-    gap: 30px; /*Espacio entre iconos*/
-    margin-top: 10px;
-  }
-  .social-iconos a img{
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-  }
-  .social-iconos a:hover img{
-    transform: scale(1.2);
-  }
+.footer-seccion p, .footer-seccion a {
+  color: white;
+  text-decoration: none;
+  font-family: "caoutchouc";
+  font-size: 14px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-seccion a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-seccion a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-seccion p img{
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-copy {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer-copy a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-copy a:hover{
+  color: #FF9500;
+}
+
+.footer-logo{
+  width: 200px;  /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-iconos{
+  display: flex;
+  justify-content: center;
+  gap: 30px; /*Espacio entre iconos*/
+  margin-top: 10px;
+}
+
+.social-iconos a img{
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-iconos a:hover img{
+  transform: scale(1.2);
+}
