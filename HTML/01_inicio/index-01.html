@@ -1,27 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rutas Travel</title>
-    <link rel="stylesheet" href="estilos-01.css">
+    <link rel="stylesheet" href="estilo-01.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="image/logo.png" alt="LogoTravel">
-        </div>
+    <header>
         <nav>
-            <ul class="menu-horizontal">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">EXPERICIENCIAS</a></li>
-                <li><a href="../03_full_promo/index-03.html">FULL PROMO</a></li>
-                <li><a href="#">CONTACTO</a></li>
+            <ul>
+                <li><a href="#">INICIO</a>
+                    <ul class="submenu">
+                        <li><a href="#">Quiénes Somos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">EXPERIENCIAS</a>
+                    <ul class="submenu">
+                        <li><a href="#">Destinos</a>
+                            <ul class="submenu">
+                                <li><a href="#">Paracas-Ica</a></li>
+                                <li><a href="#">Lunahuaná</a></li>
+                                <li><a href="#">Huaral</a></li>
+                                <li><a href="#">Churín</a></li>
+                                <li><a href="#">Antioquía</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="logo"> <img src="image/logo.png" alt="Logo Rutas Travel"> </li>
+                <li><a href="#">FULL PROMO</a>
+                    <ul class="submenu">
+                        <li><a href="#">Full Day</a>
+                            <ul class="submenu">
+                                <li><a href="#">Paracas-Ica</a></li>
+                                <li><a href="#">Lunahuaná</a></li>
+                                <li><a href="#">Huaral</a></li>
+                                <li><a href="#">Churín</a></li>
+                                <li><a href="#">Antioquía</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTO</a>
+                    <ul class="submenu-contacto">
+                        <li><a href="#">Redes Sociales</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <section class="hero">
+        <div class="social-links">
+            <a href="#"><img src="image/tik tok.png" alt="TikTok"></a>
+            <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="hero-text">
+            <h2>TURISMO VIVENCIAL</h2>
+            <h1>HUACACHINA</h1>
+            <a href="#" class="btn">VER MÁS</a>
+        </div>
+    </section>
 
+    <section class="about-section">
+        <div class="about-left">
+                <img src="#" alt="Nosotros">
+        </div>
+        <div class="about-right">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <h3>RUTAS TRAVEL</h3>
+            <p>Somos un equipo sólido de profesionales con más de 5 años de experiencia en el rubro del turismo
+                brindando la mejor experiencia en cada uno de sus tours y full days. En Rutas Travel nos encargamos de
+                que durante todo el recorrido los servicios prestados en cada uno de los lugares visitados sean
+                confiables garantizando un día lleno de aventura. Nuestro objetivo es satisfacer y superar las
+                expectativas y necesidades de nuestros clientes, ofreciendo un servicio de calidad incluyendo el valor
+                agregado del compromiso, nuestros clientes ya disfrutaron de un día inolvidable, y tú ¿Qué esperas?</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-seccion">
+                <h3>Sobre Nosotros</h3>
+                <img class="footer-logo" src="image/logo.png" alt="Logo Rutas Travel">
+            </div>
+            <div class="footer-seccion">
+                <h3>Síguenos</h3>
+                <div class="social-iconos">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="image/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="image/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://Tik-Tok.com" target="_blank">
+                        <img src="image/tik tok.png" alt="Tik-Tok">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-seccion">
+                <h3>Contacto</h3>
+                <p><img src="image/correo.png" alt="Email">Email: info@rutastravel.com</p>
+                <p><img src="image/llamada.png" alt="Llamada">Teléfono: +51 123 456 789</p>
+                <p><img src="image/whatsapp.png" alt="Whatsapp">+51 944 571 176</p>
+            </div>
+        </div>
+        <p class="footer-copy">
+            <a href="#">Términos y condiciones</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>

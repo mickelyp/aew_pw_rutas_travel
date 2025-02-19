@@ -1,0 +1,101 @@
+* {    
+    padding: 0px;
+    font-family: "Caoutchouc Regular";
+    src: url(../Fonts/Caoutchouc\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Antonio-VariableFont_wght";
+    src: url(../Fonts/Antonio-VariableFont_wght.ttf);   
+}
+
+@font-face{
+    font-family: "Caoutchouc Regular";
+    src: url(../Fonts/Caoutchouc\ Regular.ttf); 
+}
+
+body {
+    background-image: url(../image/PARACAS.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+       
+}
+
+form {     
+    display: flex;  
+    flex-flow: column;
+    background-color: rgba(5, 5, 5, 0.60);
+    width: 40%; /*cuadro con sombra color negro*/
+    height: 70%; /*cuadro con sombra color negro*/
+    padding: 20px; /*margen*/
+    justify-content: center; /*centro de la pagina desde la izquierda*/
+    align-items: center; /*centro de la pagina*/
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;  /*cuadro con sombra color negro*/
+    border-radius: 50px;  /* Borde del cuadro general (curveado)*/     
+}
+
+input, textarea{ 
+
+    resize: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    margin: 13px; /* espacio entre ambas opciones (cuadro) */  
+    transition: all 300ms;
+    border-bottom: 1px solid (0,0,0,0.2); 
+    border-radius: 12px;
+    font-size: 20px; /*cambiar tamaño de letra del contenido de las opciones*/
+}
+
+input:focus, textarea:focus{
+    border-bottom-color: #070707;  /*cuadro con sombra color negro*/
+}
+
+button{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: #FFA500; /*color del cuadro del boton*/
+    padding: 15px;
+    width: 200px; /*ancho*/
+    color: white; /*color de letra*/
+    box-shadow: rgba(0,0,0,0.7) 0px 0px 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    cursor:pointer; /*cambiar el cursor al pasar el mouse*/     
+        
+}
+
+button:hover {
+    background-color: black; /*cambiar de color al pasar el mouse*/
+    color:#FFA500;
+    transform: scale(1.1)   /*cambiar de color al pasar el mouse*/ 
+}
+
+input[type="text"] {
+    font-family: "Antonio-VariableFont_wght";
+    src: url(../Fonts/Caoutchouc\ Regular.ttf);
+     
+}
+
+textarea {
+    font-family: "Antonio-VariableFont_wght";
+    src: url(../Fonts/Caoutchouc\ Regular.ttf);
+    
+}
+
+h1 {
+    font-size: 65px;
+    color: #FFA500
+        
+}
+
+

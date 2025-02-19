@@ -5,18 +5,17 @@ body {
   height: 100vh; /* Para asegurarse de que cubra toda la pantalla */
   position: relative;
   overflow: hidden; /* Para ocultar cualquier parte de la imagen fuera de la vista */
-  font-family: anto;
   overflow-y: auto;
   scroll-snap-type: y mandatory;    
 }
 @font-face {
   font-family: "Antonio-VariableFont_wght";
-  src: url(fuente/Caoutchouc/Antonio-VariableFont_wght.ttf) format("trueType");
+  src: url(font/Antonio-VariableFont_wght.ttf) format("trueType");
 }
 
 @font-face {
   font-family: "caoutchouc";
-  src: url(fuente/Caoutchouc/Caoutchouc\ Regular.ttf) format("trueType");
+  src: url(font/Caoutchouc\ Regular.ttf) format("trueType");
 }
 
 .titulo {
@@ -87,45 +86,59 @@ opacity: 0.1;
   transform: translateX(-50%); /* Para centrar los círculos */
 }
 #separador .circle:nth-child(1) {
-  top: 10%; /* Primer círculo */
+  top: 5%; /* Primer círculo */
 }
 
 #separador .circle:nth-child(2) {
-  top: 30%; /* Segundo círculo */
+  top: 25%; /* Segundo círculo */
 }
 
 #separador .circle:nth-child(3) {
-  top: 50%; /* Tercer círculo */
+  top: 45%; /* Tercer círculo */
 }
 
 #separador .circle:nth-child(4) {
-  top: 70%; /* Cuarto círculo */
+  top: 65%; /* Cuarto círculo */
 }
 
 #separador .circle:nth-child(5) {
-  top: 90%; /* Quinto círculo */
+  top: 80%; /* Quinto círculo */
 }
 
+.contenedor-imagen-der {
+  position: relative; /* Permite posicionar los elementos hijos de manera absoluta */
+  width: 250px; /* Ajusta según el tamaño de la imagen */
+  height: 250px; /* Ajusta según el tamaño de la imagen */
+  margin-bottom: 200px; /* Espacio entre cada imagen */
+  margin-left: 15%;
+}
+.contenedor-imagen-iz {
+  position: relative; /* Permite posicionar los elementos hijos de manera absoluta */
+  width: 250px; /* Ajusta según el tamaño de la imagen */
+  height: 250px; /* Ajusta según el tamaño de la imagen */
+  margin-bottom: 200px; /* Espacio entre cada imagen */
+  margin-right: 10%;
+}
 
 .imgiz {
-  margin-bottom: 200px;
-  width: 250px;
-  height: 250px;
-  position: relative;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  position: relative; /* Permite posicionar la imagen dentro del contenedor */
   overflow: hidden;
-  transform: rotate(45deg); /* Rota el contenedor para crear el rombo */
-  border-radius: 30px;
+  transform: rotate(45deg); /* Rota la imagen */
+  border-radius: 30px; /* Bordes redondeados */
+  z-index: 0; /* Asegura que la imagen esté detrás del marco */
 }
 
+
 .marco {
-  right: 5%;
-  width: 250px;
-  height: 250px;
-  background-color: transparent;
-  position: absolute;
-  border: 3px solid #FF9500;
-  border-radius: 30px;
-  transform: rotate(45deg);
+  right: 30px;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  border: 3px solid #FF9500; /* Estilo del marco */
+  border-radius: 30px; /* Bordes redondeados */
+  transform: rotate(45deg); /* Rota el marco */
+  position: absolute; /* Posiciona el marco sobre la imagen */
   z-index: -1; /* Asegura que el marco esté por encima de la imagen */
 }
 
@@ -173,6 +186,28 @@ opacity: 0.1;
   width: 200px;
 opacity: 0.1;
 }
+
+#maleta {
+  position: absolute;
+  top: 70%; /* Ajusta para que esté alineado con la imagen de Lunahuaná */
+  right: 0px; /* Ajusta la distancia del borde derecho */
+}
+#maleta img {
+  width: 200px;
+opacity: 0.1;
+}
+
+#mundo {
+  position: absolute;
+  bottom: 0%; /* Ajusta para que esté alineado con la imagen de Lunahuaná */
+  left: 0px; /* Ajusta la distancia del borde derecho */
+}
+#mundo img {
+  width: 200px;
+opacity: 0.1;
+}
+
+
 
 .textoiz, .textoder {
   text-align: left; /* Alinea el texto a la izquierda */
